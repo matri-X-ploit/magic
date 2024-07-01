@@ -32,8 +32,8 @@ shuffle() {
   done
 }
 
-# Loop for 44 days
-for (( i=1; i<=44; i++ )); do
+# Loop for 60 days
+for (( i=1; i<=60; i++ )); do
     # Determine if it's a commit day or not (60% chance of a commit)
     commit_day=$((RANDOM % 10))
     if [ $commit_day -lt 6 ]; then
